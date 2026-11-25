@@ -5,12 +5,15 @@ function setup() {
   textSize(14);
   noStroke();
   //noLoop();
+  background('lavender');  
 }
 
 function draw() {
-  background('lavender');
-  fill('black');
+  fill('wheat');
+  rect(0,0,width,30);
+  fill('black');  
   text("mouseX:" + round(mouseX) + " mouseY:"+round(mouseY),10,20);
+  framerate(10);
   fill('indianred');
   ellipse(mouseX,mouseY,10);
 }
